@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  color: #fff;
+  background: #0a0a0a;
+  min-height: 100vh;
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top, #00f2ff20, transparent 40%),
+              radial-gradient(circle at bottom, #7f00ff20, transparent 40%);
+  z-index: -1;
+}
+
+header {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00f2ff, #7f00ff);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header p {
+  margin-top: 15px;
+  opacity: 0.8;
+}
+
+.apps {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 40px;
+  width: 320px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  opacity: 0.8;
+  margin-bottom: 25px;
+}
+
+.card a {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00f2ff, #7f00ff);
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.card a:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  opacity: 0.5;
+}
