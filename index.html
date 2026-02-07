@@ -59,6 +59,7 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
+      text-decoration: none;
     }
     
     nav ul {
@@ -364,88 +365,6 @@
       line-height: 1.7;
     }
     
-    /* Content Sections */
-    .content-section {
-      background: var(--card-bg);
-      padding: 60px 40px;
-      border-radius: 24px;
-      border: 1px solid rgba(0, 212, 255, 0.1);
-      margin-bottom: 40px;
-    }
-    
-    .content-section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: var(--primary);
-    }
-    
-    .content-section p {
-      color: var(--text-muted);
-      margin-bottom: 15px;
-      line-height: 1.8;
-    }
-    
-    .content-section ul {
-      list-style: none;
-      margin: 20px 0;
-    }
-    
-    .content-section li {
-      padding: 10px 0;
-      padding-left: 30px;
-      position: relative;
-      color: var(--text-muted);
-    }
-    
-    .content-section li::before {
-      content: '▹';
-      position: absolute;
-      left: 0;
-      color: var(--primary);
-      font-size: 1.5rem;
-    }
-    
-    /* Contact Form */
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    
-    .form-group {
-      margin-bottom: 25px;
-    }
-    
-    .form-group label {
-      display: block;
-      margin-bottom: 8px;
-      color: var(--text);
-      font-weight: 500;
-    }
-    
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 15px 20px;
-      background: var(--dark);
-      border: 1px solid rgba(0, 212, 255, 0.2);
-      border-radius: 12px;
-      color: var(--text);
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      transition: border-color 0.3s;
-    }
-    
-    .form-group input:focus,
-    .form-group textarea:focus {
-      outline: none;
-      border-color: var(--primary);
-    }
-    
-    .form-group textarea {
-      resize: vertical;
-      min-height: 150px;
-    }
-    
     /* Footer */
     footer {
       background: var(--dark);
@@ -528,10 +447,6 @@
       .features-grid {
         grid-template-columns: 1fr;
       }
-      
-      .content-section {
-        padding: 40px 25px;
-      }
     }
     
     @media (max-width: 480px) {
@@ -555,13 +470,13 @@
 <!-- Navigation -->
 <nav>
   <div class="container">
-    <div class="logo">Applicool 🚀</div>
+    <a href="index.html" class="logo">Applicool 🚀</a>
     <ul>
-      <li><a href="#home">Accueil</a></li>
+      <li><a href="index.html">Accueil</a></li>
       <li><a href="#apps">Applications</a></li>
-      <li><a href="#about">À propos</a></li>
-      <li><a href="#privacy">Confidentialité</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="about.html">À propos</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Confidentialité</a></li>
     </ul>
     <div class="mobile-menu">
       <span></span>
@@ -717,158 +632,15 @@
   </div>
 </section>
 
-<!-- About Section -->
-<section id="about">
-  <h2>À propos de nous</h2>
-  <div class="content-section">
-    <h3>Notre Mission</h3>
-    <p>
-      Applicool est né de la passion pour le développement mobile et l'innovation technologique. Notre mission est de créer des applications Android qui simplifient et enrichissent la vie quotidienne de millions d'utilisateurs à travers le monde.
-    </p>
-    
-    <h3>Notre Vision</h3>
-    <p>
-      Nous croyons que la technologie doit être accessible, intuitive et belle. Chaque application que nous développons est le résultat d'une recherche approfondie, d'un design réfléchi et d'un développement rigoureux.
-    </p>
-    
-    <h3>Nos Valeurs</h3>
-    <ul>
-      <li>Innovation constante et créativité</li>
-      <li>Qualité et excellence dans chaque détail</li>
-      <li>Respect de la vie privée des utilisateurs</li>
-      <li>Support et écoute de notre communauté</li>
-      <li>Amélioration continue de nos produits</li>
-    </ul>
-    
-    <h3>Notre Équipe</h3>
-    <p>
-      Nous sommes une équipe passionnée de développeurs, designers et product managers dédiés à créer les meilleures applications Android. Chaque membre de notre équipe apporte son expertise unique pour garantir la qualité de nos produits.
-    </p>
-  </div>
-</section>
-
-<!-- Privacy Policy Section -->
-<section id="privacy">
-  <h2>Politique de Confidentialité</h2>
-  <div class="content-section">
-    <p><em>Dernière mise à jour : Février 2026</em></p>
-    
-    <h3>1. Collecte des Données</h3>
-    <p>
-      Applicool s'engage à protéger votre vie privée. Nous collectons uniquement les données nécessaires au bon fonctionnement de nos applications. Les informations collectées peuvent inclure :
-    </p>
-    <ul>
-      <li>Données d'utilisation de l'application (fonctionnalités utilisées, fréquence)</li>
-      <li>Informations techniques (modèle d'appareil, version Android, langue)</li>
-      <li>Données de performance et de diagnostic</li>
-    </ul>
-    
-    <h3>2. Utilisation des Données</h3>
-    <p>
-      Les données collectées sont utilisées pour :
-    </p>
-    <ul>
-      <li>Améliorer la performance et la stabilité de nos applications</li>
-      <li>Personnaliser votre expérience utilisateur</li>
-      <li>Analyser les tendances d'utilisation pour développer de nouvelles fonctionnalités</li>
-      <li>Fournir un support client efficace</li>
-    </ul>
-    
-    <h3>3. Partage des Données</h3>
-    <p>
-      Nous ne vendons jamais vos données personnelles à des tiers. Vos informations peuvent être partagées uniquement dans les cas suivants :
-    </p>
-    <ul>
-      <li>Avec votre consentement explicite</li>
-      <li>Pour se conformer aux obligations légales</li>
-      <li>Avec des prestataires de services qui nous aident à exploiter nos applications (sous accord de confidentialité strict)</li>
-    </ul>
-    
-    <h3>4. Sécurité</h3>
-    <p>
-      Nous utilisons des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données contre tout accès non autorisé, modification, divulgation ou destruction.
-    </p>
-    
-    <h3>5. Vos Droits</h3>
-    <p>
-      Conformément au RGPD, vous disposez des droits suivants :
-    </p>
-    <ul>
-      <li>Droit d'accès à vos données personnelles</li>
-      <li>Droit de rectification de vos données</li>
-      <li>Droit à l'effacement de vos données</li>
-      <li>Droit à la portabilité de vos données</li>
-      <li>Droit d'opposition au traitement de vos données</li>
-    </ul>
-    
-    <h3>6. Cookies et Technologies Similaires</h3>
-    <p>
-      Nos applications peuvent utiliser des cookies et technologies similaires pour améliorer votre expérience. Vous pouvez gérer vos préférences dans les paramètres de l'application.
-    </p>
-    
-    <h3>7. Modifications</h3>
-    <p>
-      Nous pouvons mettre à jour cette politique de confidentialité périodiquement. Nous vous informerons de tout changement important via nos applications ou notre site web.
-    </p>
-    
-    <h3>8. Contact</h3>
-    <p>
-      Pour toute question concernant cette politique de confidentialité, contactez-nous à : <strong>privacy@applicool.com</strong>
-    </p>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contactez-nous</h2>
-  <p class="section-subtitle">
-    Une question ? Une suggestion ? Nous sommes là pour vous écouter.
-  </p>
-  
-  <div class="contact-form">
-    <form action="#" method="post">
-      <div class="form-group">
-        <label for="name">Nom complet</label>
-        <input type="text" id="name" name="name" required placeholder="Votre nom">
-      </div>
-      
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required placeholder="votre@email.com">
-      </div>
-      
-      <div class="form-group">
-        <label for="subject">Sujet</label>
-        <input type="text" id="subject" name="subject" required placeholder="Objet de votre message">
-      </div>
-      
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required placeholder="Votre message..."></textarea>
-      </div>
-      
-      <button type="submit" class="btn btn-primary" style="width: 100%;">
-        <span>📧</span> Envoyer le message
-      </button>
-    </form>
-    
-    <div style="margin-top: 40px; text-align: center;">
-      <p style="color: var(--text-muted); margin-bottom: 15px;">Ou contactez-nous directement :</p>
-      <p><strong>Email :</strong> <a href="mailto:contact@applicool.com" style="color: var(--primary);">contact@applicool.com</a></p>
-      <p><strong>Support :</strong> <a href="mailto:support@applicool.com" style="color: var(--primary);">support@applicool.com</a></p>
-    </div>
-  </div>
-</section>
-
 <!-- Footer -->
 <footer>
   <div class="footer-content">
     <div class="footer-links">
-      <a href="#home">Accueil</a>
+      <a href="index.html">Accueil</a>
       <a href="#apps">Applications</a>
-      <a href="#about">À propos</a>
-      <a href="#privacy">Confidentialité</a>
-      <a href="#contact">Contact</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy.html">Confidentialité</a>
       <a href="https://play.google.com/store/apps/dev?id=5020466363364311072" target="_blank">Google Play</a>
     </div>
     
@@ -900,7 +672,7 @@
     });
   });
   
-  // Mobile menu toggle (basic implementation)
+  // Mobile menu toggle
   const mobileMenu = document.querySelector('.mobile-menu');
   const navUl = document.querySelector('nav ul');
   
@@ -914,13 +686,6 @@
     navUl.style.padding = '20px';
     navUl.style.borderRadius = '12px';
     navUl.style.border = '1px solid rgba(0, 212, 255, 0.2)';
-  });
-  
-  // Form submission (basic - you'll need to implement server-side handling)
-  document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.');
-    this.reset();
   });
 </script>
 
