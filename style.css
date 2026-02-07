@@ -2,82 +2,97 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
+  background: #0f0f17;
   color: #fff;
-  background: #0a0a0a;
-  min-height: 100vh;
 }
 
-.background {
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(circle at top, #00f2ff20, transparent 40%),
-              radial-gradient(circle at bottom, #7f00ff20, transparent 40%);
-  z-index: -1;
-}
-
-header {
+header.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6e00ff, #00c3ff);
+  position: relative;
   text-align: center;
-  padding: 80px 20px;
+}
+
+header .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+header .content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 20px;
 }
 
 header h1 {
   font-size: 3rem;
-  background: linear-gradient(90deg, #00f2ff, #7f00ff);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-header p {
-  margin-top: 15px;
-  opacity: 0.8;
-}
-
-.apps {
-  display: flex;
-  justify-content: center;
-  padding: 40px;
-}
-
-.card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  border-radius: 20px;
-  padding: 40px;
-  width: 320px;
-  text-align: center;
-  backdrop-filter: blur(10px);
-}
-
-.card h2 {
   margin-bottom: 15px;
 }
 
-.card p {
-  opacity: 0.8;
-  margin-bottom: 25px;
+header p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
 }
 
-.card a {
-  display: inline-block;
-  padding: 12px 25px;
-  border-radius: 30px;
-  background: linear-gradient(90deg, #00f2ff, #7f00ff);
-  color: black;
+.btn-primary {
+  padding: 15px 35px;
+  background: #fff;
+  color: #000;
   text-decoration: none;
-  font-weight: bold;
-  transition: transform 0.2s ease;
+  font-weight: 700;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
 }
 
-.card a:hover {
-  transform: scale(1.05);
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 20px;
+}
+
+.features .card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 30%;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 15px;
+}
+
+.cta {
+  background: #1e1e2a;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.btn-secondary {
+  background: #00c3ff;
+  padding: 15px 30px;
+  color: #000;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: 700;
 }
 
 footer {
   text-align: center;
-  padding: 30px;
-  opacity: 0.5;
+  padding: 25px;
+  opacity: 0.6;
 }
