@@ -223,7 +223,7 @@ main {
 .app-icon-img {
     width: 250px;
     height: 250px;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 
         0 20px 60px rgba(0, 102, 255, 0.4),
         0 0 0 3px rgba(255, 255, 255, 0.1);
